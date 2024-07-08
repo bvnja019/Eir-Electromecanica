@@ -1,0 +1,37 @@
+.contenedor-imagen{
+    display: flex;
+    justify-content: center;
+}
+.ancla:hover{
+    background-color:#0d6efd;
+    color: white;
+}
+.soluciones-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.icono-t{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icono-t i{
+    font-size: 1.5rem;
+}
+.con{
+    display: flex;
+    justify-content: center;
+}
+.margin-centro{
+    margin: 0 auto;
+}
+/* Detalle tapa */
+.contenedor-imagenes-1{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+

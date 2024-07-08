@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Custom propiet */
+:root{
+    --primario: #0d6efd;
+    --blanco: #ffffff;
+    --fuentePrincipal: "Nunito Sans", sans-serif; 
+    /* --fuentePrincipal: "Red Hat Display", sans-serif; */
+    
+    /* --fuenteSecundaria: "Roboto", sans-serif; */
+    --fuenteSecundaria:"Red Hat Display", sans-serif;
+    --fuenteAlternativa: "Red Hat Display", sans-serif;
+
+    /* "Roboto Slab", serif; */
+}
+/* Globales */
+.fuente-secundaria{
+    font-family: var(--fuenteSecundaria);
+    font-weight: 500;
+}
+.fuente-principal{
+    font-family: var(--fuentePrincipal);
+}
+.fuenteAlternativa{
+    font-family: var(--fuenteAlternativa);
+}
+/* Media query para mayor a 620px Para nav*/
+@media(max-width:620px){
+    .container-nav{
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--primario);
+        padding: 1rem;
+    }
+    .container-nav a{
+        margin: auto 0;
+        text-decoration: none;
+        color: var(--blanco);
+    }
+    .media-nav{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        align-content: center;
+        justify-content: center;
+    }
+    .end{
+        text-align: end;
+    }
+}
+.container-nav a:hover{
+    color: aqua;
+}
+/* Media query para menor a 620px para nav*/
+@media(min-width:620px){
+    .container-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--primario);
+        padding: 1rem;
+    }
+    .container-nav a{
+        text-decoration: none;
+        color: var(--blanco);
+        margin-right: 1rem;
+    }
+    .nav-botones{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/* otra media para nav */
+@media(min-width:979px){
+    .nav-botones{ 
+        padding: 10px;
+        text-align: end;
+    }
+} 
+/* Footer */
+.border-botton{
+    color: white; 
+    padding: 20px; 
+    margin: 0;
+}
+.a-foot{
+    text-decoration: none;
+    color: white;
+}
+.a-foot:hover{
+    color: #9a9a9a;
+} 
