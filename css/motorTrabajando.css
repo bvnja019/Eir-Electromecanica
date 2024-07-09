@@ -27,11 +27,28 @@
 .margin-centro{
     margin: 0 auto;
 }
+@media(min-width:788px){
+    .txt-nor{
+        font-size: 2rem;
+    }
+}
+.txt-nor{
+    font-size: 1.4rem;
+}
 /* Detalle tapa */
 .contenedor-imagenes-1{
     display: flex;
     justify-content: space-around;
     gap: 1rem;
 }
-
-
+/* Detalle Bobinado */
+.bet{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.contenedor-card{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+}
