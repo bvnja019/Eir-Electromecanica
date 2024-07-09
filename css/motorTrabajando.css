@@ -52,3 +52,11 @@
     gap: 1rem;
     justify-content: space-around;
 }
+.three-card{
+    display: flex;
+    justify-content: center;
+}
+.centro{
+    display: flex;
+    justify-content: center;
+}
