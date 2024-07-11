@@ -1,3 +1,7 @@
+html ,body{
+    overflow-x: hidden;
+}
+
 /* Movemos tu mundo */
 .section-banner {
     height: 250px;
@@ -129,12 +133,23 @@ top: 60px;
 animation: twinkling 2s infinite;
 }
 .bg-yo{
-    background-color: #212121 ;
-    padding: 3rem;
-    display: flex;
-    justify-content: center;
-    margin: 0;
+  background-color: #212121 ;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
+@media(min-width:678px){
+    .bg-yo{
+        background-color: #212121 ;
+        padding: 2rem;
+        display: flex;
+        align-content: center;
+    }
+}
+
 
 
 /* Animacion Para Retirar */

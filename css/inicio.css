@@ -80,10 +80,22 @@
         text-align: end;
     }
 } 
-/* Footer */
-footer{
-    margin: 0;
+@media(max-width:620px){
+    .container-nav{
+        display: block;
+    }
+    .container-nav a{
+        text-align: center;
+        margin-top: 7px;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+    }
 }
+/* Footer */
+
 .border-botton{
     color: white; 
     padding: 20px; 
