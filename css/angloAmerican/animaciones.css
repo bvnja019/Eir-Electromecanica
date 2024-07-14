@@ -268,7 +268,7 @@ animation: twinkling 2s infinite;
   border-radius: var(--border-radius);
   position: relative;
   box-shadow: 0 10px 30px rgba(65, 72, 86, 0.05);
-  padding: 30px 35px;
+  padding: 30px 25px;
   display: grid;
   grid-template-columns: 30px auto;
   align-items: center;
