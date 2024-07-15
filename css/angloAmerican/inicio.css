@@ -108,3 +108,9 @@
 .a-foot:hover{
     color: #9a9a9a;
 } 
+.flex{
+    display: block !important;
+}
+.flex img{
+    margin-left: 10% !important;
+}
