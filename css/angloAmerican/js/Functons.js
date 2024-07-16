@@ -122,39 +122,67 @@ window.onload = function() {
     loadText();
 };
 
+function valida() {
+    var email = document.getElementById("email").value.trim(); // Trimming para eliminar espacios en blanco al inicio y al final
+    var pass = document.getElementById("pass").value.trim();  // Trimming para eliminar espacios en blanco al inicio y al final
 
-
-function valida(){
-    var email = document.getElementById("email").value;
-    var pass = document.getElementById("pass").value;
-    if(email === 'angloAmerican@eir.cl' && pass === 'angloAmerican1'){
+    if (email === 'angloAmerican@eir.cl' && pass === 'angloAmerican1') {
         Swal.fire({
-            title: "Se ha Verificado correctamente el usuario",
-            text: "Oprima el botón para continuar",
+            title: "Se ha verificado correctamente el usuario",
+            text: "Presione el botón para continuar",
             icon: "success"
         }).then(() => {
-            window.location.href = 'views/Angloamerican/home.html';
+            window.location.href = 'views/Angloamerican/motorSegundaV.html';
         });
-    }else if(email != 'angloAmerican@eir.cl' && pass != 'angloAmerican1'){
+    } else if (email === 'victor.Valenzuela@eir.cl' && pass === 'victorValenzuela1') {
         Swal.fire({
-            icon: "error",
-            title: "Oops...",
-            text: "Usuario o contraseña invalida",
-        });
-    }else if(email === "victor.Valenzuela@eir.cl" && pass === "victorValenzuela1"){
-        Swal.fire({
-            title: "Se ha Verificado correctamente el usuario",
-            text: "Oprima el botón para continuar",
+            title: "Se ha verificado correctamente el usuario",
+            text: "Presione el botón para continuar",
             icon: "success"
         }).then(() => {
             window.location.href = 'views/jefeTaller/motorTrabajando.html';
         });
-    }else{
+    } else {
         Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: "ha ocurrido un error comuniquese con su colaborador",
+            text: "Usuario o contraseña inválida",
         });
     }
-
 }
+
+
+// function valida(){
+//     var email = document.getElementById("email").value;
+//     var pass = document.getElementById("pass").value;
+//     if(email === 'angloAmerican@eir.cl' && pass === 'angloAmerican1'){
+//         Swal.fire({
+//             title: "Se ha Verificado correctamente el usuario",
+//             text: "Oprima el botón para continuar",
+//             icon: "success"
+//         }).then(() => {
+//             window.location.href = 'views/Angloamerican/home.html';
+//         });
+//     }else if(email != 'angloAmerican@eir.cl' && pass != 'angloAmerican1'){
+//         Swal.fire({
+//             icon: "error",
+//             title: "Oops...",
+//             text: "Usuario o contraseña invalida",
+//         });
+//     }else if(email === "victor.Valenzuela@eir.cl" && pass === "victorValenzuela1"){
+//         Swal.fire({
+//             title: "Se ha Verificado correctamente el usuario",
+//             text: "Oprima el botón para continuar",
+//             icon: "success"
+//         }).then(() => {
+//             window.location.href = 'views/jefeTaller/motorTrabajando.html';
+//         });
+//     }else{
+//         Swal.fire({
+//             icon: "error",
+//             title: "Oops...",
+//             text: "ha ocurrido un error comuniquese con su colaborador",
+//         });
+//     }
+
+// }
