@@ -15,6 +15,11 @@ function updateSecondText() {
     const newText = document.getElementById('segundo-texto').value;
     document.getElementById('segunda-fecha').querySelector('p').innerText = newText;
     localStorage.setItem('secondText', newText);
+    Swal.fire({
+        title: "Fecha Registrada con exito",
+        text: "Pronto se vera reflejada en todos los usuarios",
+        icon: "success"
+    })
 }
 
 // Función para actualizar el texto de Rodamientos
@@ -22,6 +27,11 @@ function updateThirdText() {
     const newText = document.getElementById('tercer-texto').value;
     document.getElementById('tercera-fecha').querySelector('p').innerText = newText;
     localStorage.setItem('thirdText', newText);
+    Swal.fire({
+        title: "Fecha Registrada con exito",
+        text: "Pronto se vera reflejada en todos los usuarios",
+        icon: "success"
+    })
 }
 
 // Función para actualizar el texto de Carcasa
@@ -29,6 +39,11 @@ function updateFourthText() {
     const newText = document.getElementById('cuarto-texto').value;
     document.getElementById('cuarta-fecha').querySelector('p').innerText = newText;
     localStorage.setItem('fourthText', newText);
+    Swal.fire({
+        title: "Fecha Registrada con exito",
+        text: "Pronto se vera reflejada en todos los usuarios",
+        icon: "success"
+    })
 }
 
 // Función para actualizar el texto de Cubre Ventilador
@@ -36,6 +51,11 @@ function updateFifthText() {
     const newText = document.getElementById('quinto-texto').value;
     document.getElementById('quinta-fecha').querySelector('p').innerText = newText;
     localStorage.setItem('fifthText', newText);
+    Swal.fire({
+        title: "Fecha Registrada con exito",
+        text: "Pronto se vera reflejada en todos los usuarios",
+        icon: "success"
+    })
 }
 
 // Función para actualizar el texto de Bobinado
@@ -43,6 +63,11 @@ function updateSixthText() {
     const newText = document.getElementById('sexto-texto').value;
     document.getElementById('sexta-fecha').querySelector('p').innerText = newText;
     localStorage.setItem('sixthText', newText);
+    Swal.fire({
+        title: "Fecha Registrada con exito",
+        text: "Pronto se vera reflejada en todos los usuarios",
+        icon: "success"
+    })
 }
 
 // Función para actualizar el texto de Eje
@@ -50,6 +75,11 @@ function updateSeventhText() {
     const newText = document.getElementById('septimo-texto').value;
     document.getElementById('septima-fecha').querySelector('p').innerText = newText;
     localStorage.setItem('seventhText', newText);
+    Swal.fire({
+        title: "Fecha Registrada con exito",
+        text: "Pronto se vera reflejada en todos los usuarios",
+        icon: "success"
+    })
 }
 
 // Función para actualizar el texto de Pruebas Electricas
@@ -57,6 +87,11 @@ function updateEighthText() {
     const newText = document.getElementById('octavo-texto').value;
     document.getElementById('octava-fecha').querySelector('p').innerText = newText;
     localStorage.setItem('eighthText', newText);
+    Swal.fire({
+        title: "Fecha Registrada con exito",
+        text: "Pronto se vera reflejada en todos los usuarios",
+        icon: "success"
+    })
 }
 // Funcion fecha Bobinado
 function updateDateBobinado() {
