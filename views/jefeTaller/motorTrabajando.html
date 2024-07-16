@@ -19,14 +19,14 @@
     <!-- Navbar -->
     <nav class="container-fluid container-nav">
         <!-- Imagen y logo de la empresa -->
-        <a class="fuente-secundaria logo" href="home.html" style="font-size: 1.3rem;">
+        <a class="fuente-secundaria logo" href="motorTrabajando.html" style="font-size: 1.3rem;">
             <img src="../../img/angloAmerican/logo.png" alt="Logo de la empresa">
             Eir-Electromecanica
         </a>
         <!-- Otros enlases -->
         <div class="media-nav">
-            <a class="fuente-principal end" href="home.html">Inicio</a>
-            <a class="fuente-principal end" href="motorTrabajando.html">Motor Trabajando</a>
+            <a class="fuente-principal end" href="motorTrabajando.html">Inicio</a>
+            <a class="fuente-principal end" href="#">Orden: 7488</a>
         </div>
     </nav>
 
@@ -39,9 +39,6 @@
                     <div class="card-body text-center">
                         <p>
                             Orden de Trabajo: 7436
-                        </p>
-                        <p>
-                            Fecha de recepcion: 01-07-2024
                         </p>
                     </div>
                 </div>
@@ -282,37 +279,85 @@
 
         <div class="container">
             <h3>Fechas estimadas de termino</h3>
+            <div style="display: flex; gap: 5px;" id="shared-text">
+                <h6 style="margin-left: 1.5rem;">Tapas:</h6>
+                <p>Por definirse</p>
+                <form action="https://formsubmit.co/fadc3256cf37609ba1f8366a8fd2fa33" method="POST">
+                    <input name="Fecha-tapa" style="width: 15rem; height: 30px;" type="text" id="new-text" placeholder="Digite una Fecha">
+                    <input type="submit" style="width: 9rem; height: 30px;" class="btn btn-primary" onclick="updateText()" value="Editar Fecha">    
+                    <input type="hidden" name="_next" value="https://bvnja019.github.io/Eir-Electromecanica/views/Angloamerican/motorTrabajando.html">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>
+            <div style="display: flex; gap: 5px;" id="segunda-fecha">
+                <h6>Balanceo:</h6>
+                <p>Por definirse</p>
+                <form action="https://formsubmit.co/fadc3256cf37609ba1f8366a8fd2fa33" method="POST">
+                    <input name="Fecha-Balanceo" style="width: 15rem; height: 30px;" type="text" id="segundo-texto" placeholder="Digite una nueva Fecha">
+                    <input type="submit" style="width: 9rem; height: 30px;" class="btn btn-primary" onclick="updateSecondText()" value="Editar Fecha">    
+                    <input type="hidden" name="_next" value="https://bvnja019.github.io/Eir-Electromecanica/views/Angloamerican/motorTrabajando.html">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>
+            <div style="display: flex; gap: 5px;" id="tercera-fecha">
+                <h6>Rodamientos:</h6>
+                <p>Por definirse</p>
+                <form action="https://formsubmit.co/fadc3256cf37609ba1f8366a8fd2fa33" method="POST">
+                    <input name="fecha-rodamientos" style="width: 15rem; height: 30px;" type="text" id="tercer-texto" placeholder="Digite una nueva Fecha">
+                    <input type="submit" style="width: 9rem; height: 30px;" class="btn btn-primary" onclick="updateThirdText()" value="Editar Fecha">    
+                    <input type="hidden" name="_next" value="https://bvnja019.github.io/Eir-Electromecanica/views/Angloamerican/motorTrabajando.html">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>
+            <div style="display: flex; gap: 5px;" id="cuarta-fecha">
+                <h6>Carcasa:</h6>
+                <p>Por definirse</p>
+                <form action="https://formsubmit.co/fadc3256cf37609ba1f8366a8fd2fa33" method="POST">
+                    <input name="fecha-carcasa" style="width: 15rem; height: 30px;" type="text" id="cuarto-texto" placeholder="Digite una nueva Fecha">
+                    <input type="submit" style="width: 9rem; height: 30px;" class="btn btn-primary" onclick="updateFourthText()" value="Editar Fecha">    
+                    <input type="hidden" name="_next" value="https://bvnja019.github.io/Eir-Electromecanica/views/Angloamerican/motorTrabajando.html">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>
+            <div style="display: flex; gap: 5px;" id="quinta-fecha">
+                <h6>Cubre Ventilador:</h6>
+                <p>Por definirse</p>
+                <form action="https://formsubmit.co/fadc3256cf37609ba1f8366a8fd2fa33" method="POST">
+                    <input name="fecha-tapa-cubre-ventilador" style="width: 15rem; height: 30px;" type="text" id="quinto-texto" placeholder="Digite una nueva Fecha">
+                    <input type="submit" style="width: 9rem; height: 30px;" class="btn btn-primary" onclick="updateFifthText()" value="Editar Fecha">    
+                    <input type="hidden" name="_next" value="https://bvnja019.github.io/Eir-Electromecanica/views/Angloamerican/motorTrabajando.html">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>
+            <div style="display: flex; gap: 5px;" id="sexta-fecha">
+                <h6>Bobinado:</h6>
+                <p>Por definirse</p>
+                <form action="https://formsubmit.co/fadc3256cf37609ba1f8366a8fd2fa33" method="POST">
+                    <input name="fecha-Bobinado" style="width: 15rem; height: 30px;" type="text" id="sexto-texto" placeholder="Digite una nueva Fecha">
+                    <input type="submit" style="width: 9rem; height: 30px;" class="btn btn-primary" onclick="updateSixthText()" value="Editar Fecha">    
+                    <input type="hidden" name="_next" value="https://bvnja019.github.io/Eir-Electromecanica/views/Angloamerican/motorTrabajando.html">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>
+            <div style="display: flex; gap: 5px;" id="septima-fecha">
+                <h6>Eje:</h6>
+                <p>Por definirse</p>
+                <form action="https://formsubmit.co/fadc3256cf37609ba1f8366a8fd2fa33" method="POST">
+                    <input name="fecha-Eje" style="width: 15rem; height: 30px;" type="text" id="septimo-texto" placeholder="Digite una nueva Fecha">
+                    <input type="submit" style="width: 9rem; height: 30px;" class="btn btn-primary" onclick="updateSeventhText()" value="Editar Fecha">    
+                    <input type="hidden" name="_next" value="https://bvnja019.github.io/Eir-Electromecanica/views/Angloamerican/motorTrabajando.html">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>
             <div style="display: flex; gap: 5px;" id="octava-fecha">
                 <h6>Pruebas Electricas:</h6>
                 <p>Por definirse</p>
-            </div>
-            <div style="display: flex; gap: 5px;" id="quinta-fecha">
-                <h6 style="margin-left: .5rem;">Cubre Ventilador:</h6>
-                <p>Por definirse</p>
-            </div>
-            <div style="display: flex; gap: 5px;" id="tercera-fecha">
-                <h6 style="margin-left: 2.2rem;">Rodamientos:</h6>
-                <p>Por definirse</p>
-            </div>
-            <div style="display: flex; gap: 5px;" id="segunda-fecha">
-                <h6 style="margin-left: 4rem;">Balanceo:</h6>
-                <p>Por definirse</p>
-            </div>
-            <div style="display: flex; gap: 5px;" id="sexta-fecha">
-                <h6 style="margin-left: 4.4rem;">Bobinado:</h6>
-                <p>Por definirse</p>
-            </div>
-            <div style="display: flex; gap: 5px;" id="cuarta-fecha">
-                <h6 style="margin-left: 4.7rem;">Carcasa:</h6>
-                <p>Por definirse</p>
-            </div>
-            <div style="display: flex; gap: 5px;" id="shared-text">
-                <h6 style="margin-left: 5.8rem;">Tapas:</h6>
-                <p>Por definirse</p>
-            </div>
-            <div style="display: flex; gap: 5px;" id="septima-fecha">
-                <h6 style="margin-left: 8rem;">Eje:</h6>
-                <p>Por definirse</p>
+                <form action="https://formsubmit.co/fadc3256cf37609ba1f8366a8fd2fa33" method="POST">
+                    <input name="fecha-pruebas-electricas" style="width: 15rem; height: 30px;" type="text" id="octavo-texto" placeholder="Digite una nueva Fecha">
+                    <input type="submit" style="width: 9rem; height: 30px;" class="btn btn-primary" onclick="updateEighthText()" value="Editar Fecha">    
+                    <input type="hidden" name="_next" value="https://bvnja019.github.io/Eir-Electromecanica/views/Angloamerican/motorTrabajando.html">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
             </div>
         </div>
         
@@ -392,6 +437,7 @@
             </div>
         </section>
         
+<!-- Animacion motor listo  -->
         <section>
             <div>
                 <h3 class="fuente-principal text-center">
@@ -530,8 +576,6 @@
         </section>
 
 
-
-
             <!-- Footer -->
     <footer class="bg-primary text-white">
         <hr>
@@ -592,6 +636,13 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../../css/angloAmerican/js/Functons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

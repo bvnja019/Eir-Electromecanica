@@ -429,10 +429,18 @@
                     </h5>
                     <div data-aos="fade-left" id="checklist">
                         <input value="17" name="r" type="checkbox" id="17">
-                        <label for="17">Montado de Bobinas</label>  
+                        <label for="17">Montado de Bobinas</label>
                         <input value="18" name="r" type="checkbox" id="18">
-                        <label for="18">Fecha estimada de termino: 10-07-2024</label>  
+                        <label for="18">Fecha estimada de termino: 10-07-2024</label>
                     </div>
+                    <div style="display: flex; gap: 5px;" id="fecha-bobinado">
+                        <form action="https://formsubmit.co/fadc3256cf37609ba1f8366a8fd2fa33" method="POST">
+                            <input name="fecha-Bobinado" style="width: 15rem; height: 30px;" type="text" id="new-text-bobinado" placeholder="Digite una Fecha">
+                            <input type="submit" style="width: 9rem; height: 30px;" class="btn btn-primary" onclick="updateDateBobinado()" value="Editar Fecha">    
+                            <input type="hidden" name="_next" value="https://bvnja019.github.io/Eir-Electromecanica/views/jefeTaller/bobinado.html">
+                            <input type="hidden" name="_captcha" value="false">
+                        </form>
+                    </div>    
                 </div>
                 <div>
                     <p data-aos="fade-left">Porcentaje de avance de esta tarea:</p>
@@ -982,8 +990,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-    </script>
-    <script src="../../css/angloAmerican/js/Functons.js"></script>       
+    </script>       
+    <script src="../../css/angloAmerican/js/Functons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
